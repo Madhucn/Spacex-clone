@@ -39,7 +39,7 @@ video {
   margin: 0;
   padding: 0;
   font-size: large;
-  flex-grow: 1;
+  width: 100%;
   justify-content: space-between; /* Evenly distribute the links across the navbar */
 }
 
@@ -100,10 +100,14 @@ dispaly:none; /* Hidden by default, shown on mobile */
 .nav-item a {
   color: #fff;
   text-decoration: none;
-  padding: 10px;
-  position: relative;
+  padding: 5px;
+ font-size: 16px;
   white-space: nowrap; /* Prevent text from wrapping */
 }
+.nav-item a {
+    font-size: 12px; /* Reduce font size */
+    padding: 3px; /* Reduce padding for smaller screens */
+  }
 
 .nav-item a:hover {
   color: #ddd;
@@ -134,7 +138,7 @@ dispaly:none; /* Hidden by default, shown on mobile */
   .nav-links {
    font-size: 14px; /* Reduce font size */
     justify-content: space-around; /* Distribute links evenly */
-   
+   padding: 0 10px;
   }
   .nav-links.expanded {
     display: flex; /* Show links when navbar is expanded */
@@ -142,7 +146,7 @@ dispaly:none; /* Hidden by default, shown on mobile */
 
 
   .nav-item {
-    margin: 0 10px; /* Space out the items */
+    margin: 0 5px; /* Space out the items */
   }
 
 
@@ -256,10 +260,11 @@ dispaly:none; /* Hidden by default, shown on mobile */
   }
 
   .nav-item {
-    margin: 0 3px; /* Further reduce margin for very small screens */
+    margin: 0 2px; /* Further reduce margin for very small screens */
   }
 
-  .navbar {
-    padding: 5px 5px; /* Further reduce padding for very small screens */
-  }
+ .nav-item a {
+    font-size: 10px; /* Further reduce font size */
+    padding: 2px; /* Further reduce padding */
+ }
 }
