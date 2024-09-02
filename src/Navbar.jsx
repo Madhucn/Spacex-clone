@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import video from "./space.mp4";
 import { Link } from 'react-router-dom';
+
 const Navbar = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   const hamburgerIcon = "\u2630";
   return (
     <>
-      <nav className="navbar">
-        <ul className="nav-links">
+      <nav className={`navbar ${isExpanded ? 'expanded' : ''}`}>
+        <ul className={`nav-links ${isExpanded ? 'expanded' : ''}`}>
           <li className="nav-item">
             <a href="#spacex">Space X</a>
           </li>
           <li className="nav-item">
-          <Link to="/falcon9">Falcon 9</Link>
+            <Link to="/falcon9">Falcon 9</Link>
           </li>
           <li className="nav-item">
             <a href="#falconheavy">Falcon Heavy</a>
@@ -37,8 +44,10 @@ const Navbar = () => {
           <li className="nav-item">
             <a href="#shop">Shop</a>
           </li>
-          <li className="hamburger-menu">{hamburgerIcon}</li>
         </ul>
+        <div className="hamburger-menu" onClick={handleToggle}>
+          {hamburgerIcon}
+        </div>
       </nav>
 
       <div className="scroll">
