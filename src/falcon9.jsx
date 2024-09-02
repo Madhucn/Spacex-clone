@@ -29,9 +29,7 @@ const Falcon9 = () => {
           <li className="nav-item">
             <a href="#starshield">Starshield</a>
           </li>
-          <li className="nav-item">
-            <a href="#starlink">Starlink</a>
-          </li>
+          
           <li className="nav-item">
             <a href="#shop">Shop</a>
           </li>
