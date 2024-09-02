@@ -7,9 +7,11 @@ const Falcon9 = () => {
   
   <nav className="navbar">
         <ul className="nav-links">
-         
           <li className="nav-item">
-           <Link to="/falcon9">Falcon 9</Link>
+            <a href="#spacex">Space X</a>
+          </li>
+          <li className="nav-item">
+            <a href="/falcon9" target="_blank" rel="noopener noreferrer">Falcon 9</a> {/* Opens in a new tab */}
           </li>
           <li className="nav-item">
             <a href="#falconheavy">Falcon Heavy</a>
@@ -29,7 +31,9 @@ const Falcon9 = () => {
           <li className="nav-item">
             <a href="#starshield">Starshield</a>
           </li>
-          
+          <li className="nav-item">
+            <a href="#starlink">Starlink</a>
+          </li>
           <li className="nav-item">
             <a href="#shop">Shop</a>
           </li>
@@ -46,3 +50,4 @@ const Falcon9 = () => {
 }
 
 export default Falcon9;
+
