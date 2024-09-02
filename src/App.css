@@ -39,7 +39,9 @@ video {
   margin: 0;
   padding: 0;
   font-size: large;
+  font-size: 14px; /* Adjust font size for smaller screens */
   width: 100%;
+   flex-wrap: wrap; /* Allow items to wrap if needed */
   justify-content: space-between; /* Evenly distribute the links across the navbar */
 }
 
@@ -100,9 +102,8 @@ dispaly:none; /* Hidden by default, shown on mobile */
 .nav-item a {
   color: #fff;
   text-decoration: none;
-  padding: 5px;
- font-size: 16px;
-  white-space: nowrap; /* Prevent text from wrapping */
+padding: 8px; /* Adjust padding for smaller screens */
+  display: block; /* Ensure links are block-level for better clickability */
 }
 .nav-item a {
     font-size: 12px; /* Reduce font size */
@@ -136,17 +137,19 @@ dispaly:none; /* Hidden by default, shown on mobile */
   }
 
   .nav-links {
-   font-size: 14px; /* Reduce font size */
+   font-size: 12px; /* Reduce font size */
     justify-content: space-around; /* Distribute links evenly */
-   padding: 0 10px;
+   padding: 0 5px;
   }
   .nav-links.expanded {
     display: flex; /* Show links when navbar is expanded */
   }
-
+.nav-item a {
+    padding: 5px; /* Further reduce padding */
+  }
 
   .nav-item {
-    margin: 0 5px; /* Space out the items */
+    margin: 0 2px; /* Space out the items */
   }
 
 
@@ -256,15 +259,15 @@ dispaly:none; /* Hidden by default, shown on mobile */
   }
 @media (max-width: 480px) {
   .nav-links {
-    font-size: 12px; /* Further reduce font size */
+    font-size: 10px; /* Further reduce font size */
   }
 
   .nav-item {
-    margin: 0 2px; /* Further reduce margin for very small screens */
+    margin: 0 1px; /* Further reduce margin for very small screens */
   }
 
  .nav-item a {
     font-size: 10px; /* Further reduce font size */
-    padding: 2px; /* Further reduce padding */
+    padding: 3px; /* Further reduce padding */
  }
 }
