@@ -140,6 +140,10 @@ video {
     width: 200px; /* Set a width for the dropdown */
     padding: 10px;
   }
+  .nav-links.expanded {
+    display: flex; /* Show links when navbar is expanded */
+  }
+
 
   .nav-item {
     margin: 10px 0; /* Space out the items */
