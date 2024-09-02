@@ -11,7 +11,7 @@ const Falcon9 = () => {
             <a href="#spacex">Space X</a>
           </li>
           <li className="nav-item">
-            <a href="/falcon9" target="_blank" rel="noopener noreferrer">Falcon 9</a> {/* Opens in a new tab */}
+           <Link to="/falcon9">Falcon 9</Link>
           </li>
           <li className="nav-item">
             <a href="#falconheavy">Falcon Heavy</a>
