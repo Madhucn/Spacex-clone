@@ -7,9 +7,7 @@ const Falcon9 = () => {
   
   <nav className="navbar">
         <ul className="nav-links">
-          <li className="nav-item">
-            <a href="#spacex">Space X</a>
-          </li>
+         
           <li className="nav-item">
            <Link to="/falcon9">Falcon 9</Link>
           </li>
